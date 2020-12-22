@@ -2,9 +2,9 @@
  :root {
     --main-font:sans-serif;
     --font-size: 16px;
-    --main-color:rgb(248, 42, 42);
-    --second-color:rgb(0, 0, 0);
-    --main-modal-color: rgba(202, 63, 8, 0.85);
+    --main-color:rgb(6, 51, 104);
+    --second-color:rgb(255, 255, 255);
+    --main-modal-color: rgba(5, 151, 151, 0.85);
     --second-modal-color:rgb(77, 78, 77,0.85);
     --container-width: 1200xp;
     }
@@ -38,21 +38,47 @@
  /* menu de hamburguesa */
  .header{
    position: sticky;
+   font-family: sans-serif;
    z-index: 997;
    top: 0;
-   padding: 1rem;
+   padding: 0rem;
+   height: 4rem;
    background-color: var(--main-color);
    color: var(--second-color);
  }
-
- .header h1{
-   margin:0 ;
-   text-align: center;
-   z-index: 997
+  .imagenHorae{
+   width: 4rem;
+   height: 4rem; 
  }
 
+ .logoHorae{
+  position: relative;
+  height:100px ;
+ }
+
+ .logoHorae img{
+  height: 14rem;
+  width: 14rem;
+  object-fit: cover;
+  object-position: 50% 0%;
+ }
+
+.header img{
+  margin:0 ;
+   text-align: center;
+   z-index: 997;
+}
+
+ .header h1{
+   margin:1rem ;
+   text-align: center;
+   z-index: 997;
+ 
+ }
+ 
+
  .section{
-   padding: 2rem;
+   padding: 1rem;
    padding-top: 4rem;
    margin-left: auto;
    margin-right: auto;
@@ -61,6 +87,21 @@
    min-height: 100vh;
    text-align: center;
  }
+ .sectionCuatro{
+  padding: 0;
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+}
+.sectionCuatro img{
+  height: 18rem;
+  
+}
+
 
  .panel{
    position: fixed;
@@ -130,27 +171,10 @@
   min-height: 50vh;
   background-color: var(--second-color);
 }
-.ball{
-   margin:auto;
-   width:4rem;
-   height: 4rem;
-   border-radius: 50%;
-   background-color: var(--main-color)
 
- }
- .cuadrito{
-  margin: 1vh;
- display: inline-block;
-  height: 6rem;
-  width: 7rem;
-  align-items: center;
-  text-align: center;
-  border: .5px black solid; 
-  font-size:.8rem;
-  border-radius:8% ;
- padding-top: 7vh;
- opacity: 80%;
- }
+
+ 
+
 
  .conta{
    top: 0;
@@ -354,6 +378,7 @@
   @media screen and (min-width:1024px){
     body{
       display: grid;
+      
       grid-template-columns: 80% 20%;
       grid-template-rows: 4rem auto;
       grid-template-areas: 
@@ -367,6 +392,7 @@
 
     .header{
       grid-area: header;
+      top:0;
     }
 
     .panel{
@@ -409,14 +435,11 @@
     }
   }
 
-  .video{
-    width:100%;
-     
-   }
+  
 
    .contact-form{
-     --form-ok-color: rgb(74, 236, 42);
-     --form-error-color: rgb(255, 83, 52);
+     --form-ok-color: rgb(4, 149, 216);
+     --form-error-color: rgb(52, 99, 255);
      margin-left: 0.5rem;
      margin: 1rem auto;
      display: block;
@@ -428,7 +451,9 @@
      margin:1rem auto;
      display: block;
      width: 100%;
+     
    }
+   
 
    .contact-form textarea{
     resize: none;
@@ -478,6 +503,7 @@
    .none{
      display: none;
    }
+   
 
    @keyframes show-message{
      0%{
@@ -486,11 +512,24 @@
      }
 
      100%{
-       visibility:visible;
+       visibility:visible;  
        opacity: 1;
      }
+     
    }
-
+   .sectionTres{
+    padding: 2rem;
+    background: rgb(54, 54, 54);
+    padding-top: 0.1rem;
+    width: 100%;
+  
+    
+    max-width: var(--container-width);
+    min-height: 40vh;
+    
+    color: wheat;
+  }
+ 
 
      
     

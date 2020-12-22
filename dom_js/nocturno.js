@@ -1,7 +1,10 @@
 const d =document;
 const lsg = localStorage;
+const $sections = d.querySelectorAll("section");
+
 export function nocheDia(eventoNoche){
   const $camBio=  d.querySelector(eventoNoche)
+
 
   
   let sol= "☀️",
@@ -11,12 +14,15 @@ export function nocheDia(eventoNoche){
   d.body.classList.add("is-active")
   $camBio.textContent=sol;
   lsg.setItem("theme","dark")
+  d.c
   
   }
   const darkMode = ()=>{ 
      d.body.classList.remove("is-active")
   $camBio.textContent=luna;
   lsg.setItem("theme","light")
+  
+  
   
   }
   
@@ -25,6 +31,7 @@ export function nocheDia(eventoNoche){
       // console.log(d.querySelector(eventoNoche));
       if ( $camBio.textContent === sol){
         darkMode();
+        
       }
       else{ 
         lightMode (); 
