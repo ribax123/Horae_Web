@@ -15,7 +15,7 @@
    box-sizing: border-box;
    font-family: var(--main-font);
    font-size: var(--font-size);
-   scroll-behavior: smooth;
+   scroll-behavior: smooth  ;
  }
 
  *,
